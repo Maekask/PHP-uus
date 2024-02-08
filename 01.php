@@ -8,6 +8,28 @@
 <body>
 
 <h1>Harjutused 4</h1>
+<?php
+$p = 4;
+switch ($p) {
+    case ($p > 10):
+        echo "SUPER";
+        break;
+    case ($p >=5 && $p<=9):
+        echo "Tehtud";
+        break;
+    case ($p <5):
+        echo "Kasin";
+        break;
+    default:
+        echo "Punkte pole lisatud";
+        break;
+}
+
+
+
+?>
+
+
 <form action="" method="GET">
     Lisa sünniaasta <input type="number" name="synd" min="1900" max="2100" required >
     <input type="submit" value="Leia juubel"><br>
@@ -26,6 +48,7 @@ if (!empty($_GET["synd"])) {
 }
 
 ?>
+<br>
 <?php
 $nr1 = 2;
 $nr2 = 5;
